@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <div class="pageContainer">
+         <!-- PAGE HEADER -->
+         <header class="pageHeader">
+            <!-- Page Header Container -->
+            <div class="pageHeader__LogoCon">
+                <a href="index.html" title="Go to Home page"><img src="Assets/Images/logo_shop.png" alt="Shop Logo" class="pageLogo__headerLogo"></a>
+            </div>
+
+            <!-- Page Header Navigation Container -->
+            <div class="pageHeader__NavCon">
+                <ul class="pageHeader__Nav">
+                    <li><a href="index.html" title="Go to Home page">HOME</a></li>
+                    <li class="pageHeader__subMenuCon">
+                        <span>PAGES</span>
+                        <ul class="pageHeader__subMenu">
+                            <li><a href="detailPage.html" title="Go to Product Detail page">PRODUCT DETAIL</a></li>
+                            <li><a href="login.html" title="Go to Login page">LOGIN</a></li>
+                            <li><a href="register.html" title="Go to Register page">REGISTER</a></li>
+                            <li><a href="shoppingCart.html" title="Go to your Shopping Cart">SHOPPING CART</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Page Header Icons Container -->
+            <div class="pageHeader__IconsCon">
+                <ul class="pageHeader__Icons">
+                    <li class="pageHeader__searchIcon">
+                        <a href="#" title="Search items here">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                    <li class="pageHeader__accountManageIcon">
+                        <a href="login.html" title="Manage your account">
+                            <i class="far fa-user"></i>
+                        </a>
+                    </li>
+                    <li class="pageHeader__shoppingCartIcon">
+                        <div class="pageHeader__shoppingCart">
+                            <a href="#" title="Check your Shopping Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                        </div>
+                        <div class="pageHeader__shoppingCart--numOfItemsInCart">
+                            3
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="pageMain">
+            
+            <div class="pageCart__tableCon" style="overflow-x: auto">
+                <table class="pageCart__table" width="1200px">
+                    <thead>
+                        <tr>
+                            <th>Images</th>
+                            <th>Product</th>
+                            <th>Unit Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> 
+                                <div class="pageCart__productPic">
+                                    <img src="../images/pro13.jpg" alt="product 1">
+                                </div>
+                            </td>
+                            <td>Bakix Furniture</td>
+                            <td>$130.00</td>
+                            <td>
+                                <div class="pageDetail__adjustNumOfItem pageCart__adjustNumOfItem">
+                                    <button type="button" class="pageDetail--subtractItemButton">
+                                        -
+                                    </button>
+                                    <div class="pageDetail--currentNumOfItem">
+                                        1
+                                    </div>
+                                    <button type="button" class="pageDetail--addItemButton">
+                                        +
+                                    </button>
+                                </div>
+                            </td>
+                            <td>$130.00</td>
+                            <td>X</td>
+                        </tr>
+                        <tr>
+                            <td> 
+                                <div class="pageCart__productPic">
+                                    <img src="../images/pro14.jpg" alt="product 1">
+                                </div>
+                            </td>
+                            <td>Sujon Chair Set</td>
+                            <td>$120.50</td>
+                            <td>
+                                <div class="pageDetail__adjustNumOfItem pageCart__adjustNumOfItem">
+                                    <button type="button" class="pageDetail--subtractItemButton">
+                                        -
+                                    </button>
+                                    <div class="pageDetail--currentNumOfItem">
+                                        1
+                                    </div>
+                                    <button type="button" class="pageDetail--addItemButton">
+                                        +
+                                    </button>
+                                </div>
+                            </td>
+                            <td>$120.50</td>
+                            <td>X</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pageCart__couponCon">
+                <form action="#" method="GET">
+                    <input type="text" name="couponCode" placeholder="Coupon Code">
+                    <button type="submit" class="pageCart__submitCouponBtn">APPLY COUPON</button>
+                </form>
+            </div>
+
+            <div class="pageCart__updateCartCon">
+                <a href="index.html"><button class="pageCart__updateCartBtn">UPDATE CART</button></a>
+            </div>
+
+            <div class="pageCart__checkOutCon">
+                
+                <form action="#" class="pageCart__totalAmount">
+                    <div class="pageCart__checkTotal--text">
+                        Cart Totals
+                    </div>
+                    <hr>
+                    <div class="pageCart__totalCon">
+                        <span class="pageCart__total--bullet">Subtotal</span>
+                        <input class="pageCart__total--amount" type="text" name="total" value="$250.00" disabled>
+                    </div>
+                    <hr>
+                    <div class="pageCart__totalCon">
+                        <span class="pageCart__total--bullet">Total</span>
+                        <input class="pageCart__total--amount" type="text" name="total" value="$250.00" disabled>
+                    </div>
+                    <hr>
+                    <button type="submit">PROCEED TO CHECKOUT</button>
+                    
+                </form>
+            </div>
+        </div>
+        
+        <!-- PAGE FOOTER -->
+        <footer class="pageFooter">
+            <!-- LEFT PART -->
+            <div class="pageFooter__Left">
+                <div class="pageFooter__shopLogo">
+                    <a href="#"><img src="Assets/Images/logo_shop.png" alt="Shop Logo"></a>
+                </div>
+
+                <div class="pageFooter__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi non neque, ratione perferendis magni fugiat voluptatum, minus ex laudantium asperiores, ullam modi voluptatem nihil corporis. Enim debitis repudiandae nostrum assumenda.
+                </div>
+
+                <div class="pageFooter__contactInfo">
+                    <div class="pageFooter__timeLogo">
+                        <img src="Assets/Images/time.png" alt="24/7 support">
+                    </div>
+                    <div class="pageFooter__contactPrompt">
+                        Got Questions? Call us 24/7!
+                    </div>
+                    <div class="pageFooter__contactNumber">
+                        (0600) 874 548
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT PART -->
+            <div class="pageFooter__Right">
+                <!-- SOCIAL MEDIA -->
+                <div class="pageFooter__socialMediaCon">
+                    <div class="pageFooter__columnText">Social Media</div>
+                    <ul class="pageFooter__link">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Behance</a></li>
+                        <li><a href="#">Dribbble</a></li>
+                        <li><a href="#">Linkedin</a></li>
+                        <li><a href="#">Youtube</a></li>
+                    </ul>
+                </div>
+
+                <!-- LOCATION -->
+                <div class="pageFooter__locationCon">
+                    <div class="pageFooter__columnText">Location</div>
+                    <ul class="pageFooter__link">
+                        <li><a href="#">New York</a></li>
+                        <li><a href="#">Tokyo</a></li>
+                        <li><a href="#">Dhaka</a></li>
+                        <li><a href="#">Chittagong</a></li>
+                        <li><a href="#">China</a></li>
+                        <li><a href="#">Japan</a></li>
+                    </ul>
+                </div>
+
+                <!-- ABOUT -->
+                <div class="pageFooter__aboutCon">
+                    <div class="pageFooter__columnText">About</div>
+                    <ul class="pageFooter__link">
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Wholesale</a></li>
+                        <li><a href="#">Direction</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

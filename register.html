@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <title>Register</title>
+</head>
+<body>
+    <div class="pageContainer">
+         <!-- PAGE HEADER -->
+         <header class="pageHeader">
+            <!-- Page Header Container -->
+            <div class="pageHeader__LogoCon">
+                <a href="index.html" title="Go to Home page"><img src="Assets/Images/logo_shop.png" alt="Shop Logo" class="pageLogo__headerLogo"></a>
+            </div>
+
+            <!-- Page Header Navigation Container -->
+            <div class="pageHeader__NavCon">
+                <ul class="pageHeader__Nav">
+                    <li><a href="index.html" title="Go to Home page">HOME</a></li>
+                    <li class="pageHeader__subMenuCon">
+                        <span>PAGES</span>
+                        <ul class="pageHeader__subMenu">
+                            <li><a href="detailPage.html" title="Go to Product Detail page">PRODUCT DETAIL</a></li>
+                            <li><a href="login.html" title="Go to Login page">LOGIN</a></li>
+                            <li><a href="register.html" title="Go to Register page">REGISTER</a></li>
+                            <li><a href="shoppingCart.html" title="Go to your Shopping Cart">SHOPPING CART</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Page Header Icons Container -->
+            <div class="pageHeader__IconsCon">
+                <ul class="pageHeader__Icons">
+                    <li class="pageHeader__searchIcon">
+                        <a href="#" title="Search items here">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                    <li class="pageHeader__accountManageIcon">
+                        <a href="login.html" title="Manage your account">
+                            <i class="far fa-user"></i>
+                        </a>
+                    </li>
+                    <li class="pageHeader__shoppingCartIcon">
+                        <div class="pageHeader__shoppingCart">
+                            <a href="shoppingCart.html" title="Check your Shopping Cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                        </div>
+                        <div class="pageHeader__shoppingCart--numOfItemsInCart">
+                            3
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- PAGE TITLE -->
+        <div class="pageTitle">
+            <!-- <img src="Assets/Images/page-title.png" alt="" style="z-index: -1; width: 1200px"> -->
+            <div class="pageTitle__text">Register</div>
+            <div class="pageTitle__currentNavCon">
+                <ul class="pageTitle__shortLink">
+                    <li class="pageTitle__shortLinkHome"><a href="index.html" title="Back to Homepage">HOME</a></li>
+                    <li>REGISTER</li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- PAGE MAIN CONTENT -->
+        <div class="pageMain">
+            <div class="pageLogin-Regis__formCon">
+                <form class="pageLogin-Regis__form" action="registerDone.html" method="GET">
+                    <div class="pageLogin-Regis__formTitle">
+                        Signup From Here
+                    </div>
+
+                    <div class="pageLogin-Regis__userNameCon">
+                        <label for="registerUserName"><span class="login-regis__bulletText">Username</span><span class="pageLogin-Regis--requireSign">**</span></label>
+                        <input class="login-regisInput" type="text" name="registerUserName" id="registerUserName" placeholder="Enter Username or Email address..." required>
+                    </div>
+    
+                    <div class="pageLogin-Regis__emailCon">
+                        <label for="registerEmail"><span class="login-regis__bulletText">Email Address</span><span class="pageLogin-Regis--requireSign">**</span></label>
+                        <input class="login-regisInput" type="email" name="registerEmail" id="registerEmail" placeholder="Enter password... " required>
+                    </div>
+
+                    <div class="pageLogin-Regis__passwordCon">
+                        <label for="registerPassword"><span class="login-regis__bulletText">Password</span><span class="pageLogin-Regis--requireSign">**</span></label>
+                        <input class="login-regisInput" type="password" name="registerPassword" id="registerPassword" placeholder="Enter password... " required>
+                    </div>
+        
+                    <input type="submit" value="REGISTER NOW" class="login-regisButton">
+    
+                    <hr><span class="pageLogin-Regis__betweenLines">or</span><hr>
+        
+                </form>
+        
+                <button class="pageLogin-Regis__gotoLogin-Regis"><a href="login.html">LOGIN NOW</a></button>
+            </div>
+                
+        </div>
+        
+        <!-- PAGE FOOTER -->
+        <footer class="pageFooter">
+            <!-- LEFT PART -->
+            <div class="pageFooter__Left">
+                <div class="pageFooter__shopLogo">
+                    <a href="#"><img src="Assets/Images/logo_shop.png" alt="Shop Logo"></a>
+                </div>
+
+                <div class="pageFooter__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi non neque, ratione perferendis magni fugiat voluptatum, minus ex laudantium asperiores, ullam modi voluptatem nihil corporis. Enim debitis repudiandae nostrum assumenda.
+                </div>
+
+                <div class="pageFooter__contactInfo">
+                    <div class="pageFooter__timeLogo">
+                        <img src="Assets/Images/time.png" alt="24/7 support">
+                    </div>
+                    <div class="pageFooter__contactPrompt">
+                        Got Questions? Call us 24/7!
+                    </div>
+                    <div class="pageFooter__contactNumber">
+                        (0600) 874 548
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT PART -->
+            <div class="pageFooter__Right">
+                <!-- SOCIAL MEDIA -->
+                <div class="pageFooter__socialMediaCon">
+                    <div class="pageFooter__columnText">Social Media</div>
+                    <ul class="pageFooter__link">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Behance</a></li>
+                        <li><a href="#">Dribbble</a></li>
+                        <li><a href="#">Linkedin</a></li>
+                        <li><a href="#">Youtube</a></li>
+                    </ul>
+                </div>
+
+                <!-- LOCATION -->
+                <div class="pageFooter__locationCon">
+                    <div class="pageFooter__columnText">Location</div>
+                    <ul class="pageFooter__link">
+                        <li><a href="#">New York</a></li>
+                        <li><a href="#">Tokyo</a></li>
+                        <li><a href="#">Dhaka</a></li>
+                        <li><a href="#">Chittagong</a></li>
+                        <li><a href="#">China</a></li>
+                        <li><a href="#">Japan</a></li>
+                    </ul>
+                </div>
+
+                <!-- ABOUT -->
+                <div class="pageFooter__aboutCon">
+                    <div class="pageFooter__columnText">About</div>
+                    <ul class="pageFooter__link">
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Wholesale</a></li>
+                        <li><a href="#">Direction</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
